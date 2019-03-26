@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Regular.otf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Medium.otf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Bold.otf');
+    font-weight: bold;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+    @media(min-width: 768px) {
+        font-size: 16px;
+    }
+}
+
+body {
+    margin: 0;
+    background: url(../images/bg.png);
+    // padding-bottom: 80px;
+    font-family: 'Gilroy', sans-serif;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-size: 5rem;
+    margin: 20px 0;
+    @media(max-width: 767px) {
+        font-size: 3rem;
+    }
+}
+
+h2 {
+    font-size: 3rem;
+    margin: 10px 0;
+    @media(max-width: 767px) {
+        font-size: 2rem;
+    }
+}
+
+h1, h2, h3 {
+    color: #6e150c;
+    text-transform: uppercase;
+}
+
+.orange-color {
+    color: #ee7d00;
+}
+
+p {
+    color: #545759;
+    line-height: 1.5;
+}
+
+&.list-custom {
+    padding-left: 15px;
+    li {
+        color: #545759;
+    }
+}
+
+button[disabled] {
+    opacity: .3;
+}
+
+.fail {
+    background: #E41F22;
+    color: #fff;
+    display: inline-block;
+    padding: 2px;
+}
+
+.success {
+    background: #3DB497;
+    color: #fff;
+    display: inline-block;
+    padding: 2px;
+}
